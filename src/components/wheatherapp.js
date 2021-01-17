@@ -6,7 +6,7 @@ const Wheatherapp = () => {
   const [search, setSearch] = useState("Mumbai");
 
   const fetchapi = async () => {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=ed8712101a275be914e62dd090271022`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=ed8712101a275be914e62dd090271022`;
     const response = await fetch(url);
     const resJson = await response.json();
     console.log(resJson);
@@ -70,7 +70,7 @@ const Wheatherapp = () => {
               <span>|</span>
               <div className="temp">
                 <span>Speed</span>
-                <h1>{city.wind.speed}km/h;</h1>
+                <h1>{city.wind.speed}km/h</h1>
               </div>
             </div>
           </div>
