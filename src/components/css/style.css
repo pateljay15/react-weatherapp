@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+html{
+    font-size: 10px;
+}
+
+.box{
+    background-image: linear-gradient(#253898, #5737D6);
+    box-shadow: 0 0 18px #253898;
+    /* background-image: linear-gradient(#538FFB, #5B54FA); */
+    width: 80vw;
+    margin: 4rem auto;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4rem;
+}
+
+.inputData{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+
+#inputText{
+    margin-top: 3rem;
+    font-size: 2.3rem;
+}
+
+.inputField{
+    margin: 2.35rem 1rem;
+    border-radius: 2rem;
+    color: #141414;
+    width: 18rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    padding: 0px 4px;
+}
+
+.errorMes{
+    margin: 3rem 2rem;
+    font-size: 3rem;
+}
+
+.info{
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    height: 62vh;
+    width: inherit;
+    align-items: center;
+}
+
+#country{
+    font-size: 2rem;
+    color: #141414;
+}
+
+.atmos{
+    margin-top: 1rem;
+    font-size: 2.3rem;
+}
+
+.inside{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3.5rem;
+    width: 80vw;
+    height: 14vh;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 992px) {
+    .temp{
+        margin: -1rem 4rem;
+    }
+    .inputData {
+        flex-direction: column;
+        align-items: center;
+    }    
+  }
+.tempp{
+    margin-top: 2rem;
+}
+
+.location{
+    background-color: aliceblue;
+    color: #141414;
+    font-size: 3rem;
+    border-radius: 2rem;
+    width: 31vh;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 0 10px #141414;
+}
+
+.fa-street-view{
+    margin: 0px 4px;
+    color: #141414;
+}
+
+span,
+h1{
+    font-size: 3rem;
+}
+
+.temp{
+    width: 15vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
